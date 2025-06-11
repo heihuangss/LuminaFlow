@@ -3,20 +3,17 @@ Blinker App配置
 API参考（Blinker控制命令）
 组件类型	键名	功能说明	数据格式/范围
 *
-RGB	    col-t3i	  设置颜色	(R, G, B) 0-255
-Slider	ran-8y7	  设置亮度	0-100 (百分比)
-Button	btn-gmq	  切换灯光模式	无（点击触发）
-Button	btn-relay	继电器开关	无（点击触发）
-Button	btn-834	  渐变色开关	无（点击触发）
-Button	btn-2da	  呼吸模式速度切换	无（点击触发）
-Button	btn-mwk	  流水模式速度切换	无（点击触发）
-Button	btn-nw4	  渐变模式速度切换	无（点击触发）
+*RGB	  col-t3i	  设置颜色	(R, G, B) 0-255
+*Slider	ran-8y7	  设置亮度	0-100 (百分比)
+*Button	btn-gmq	  切换灯光模式	无（点击触发）
+*Button	btn-relay	继电器开关	无（点击触发）
+*Button	btn-834	  渐变色开关	无（点击触发）
+*Button	btn-2da	  呼吸模式速度切换	无（点击触发）
+*Button	btn-mwk	  流水模式速度切换	无（点击触发）
+*Button	btn-nw4	  渐变模式速度切换	无（点击触发）
 *
 开源许可
 本项目采用 MIT License 开源许可，允许自由使用、修改和分发。
-
-贡献指南
-欢迎提交Issue或Pull Request来改进项目：
 
 克隆仓库并创建新分支
 提交清晰的变更说明
