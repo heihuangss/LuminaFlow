@@ -1,10 +1,45 @@
+ * 智能 LED 控制器 - 支持 Blinker IoT
+ *
+ * 功能特性：
+ * - 多种灯光效果：静态、呼吸、水流
+ * - 两种颜色之间的渐变
+ * - 所有效果的速度控制
+ * - 继电器控制（用于附加设备）
+ * - 连接时自动与 Blinker 应用同步
+ *
+ * 硬件配置：
+ * - ESP8266/ESP32 开发板
+ * - WS2812B LED 灯带（15 颗灯珠）
+ * - 继电器模块
+ *
+ * 作者：[李承健]
+ * 版本：1.1
+ * GitHub: https://github.com/heihuangss/LuminaFlow
+ *
+ * MIT 许可证
+ * 版权所有 (c) 2023 [李承健]
+ *
+ * 特此免费授予任何获得本软件及相关文档文件（以下简称“软件”）副本的人不受限制地处置软件的权利，包括但不限于使用、复制、修改、合并、发布、分发、转授许可和/或销售软件副本，以及准许接受软件提供的人员这样做，但须符合以下条件：
+ *
+ * 上述版权声明和本许可声明应包含在软件的所有副本或实质性部分中。
+ *
+ * 本软件按“原样”提供，不附有任何明示或暗示的担保，包括但不限于适销性担保、特定用途适用性和非侵权担保。在任何情况下，作者或版权持有人均不对因软件或使用或其他软件交易而引起、产生于或与之相关的任何索赔、损害赔偿或其他法律责任承担任何责任，无论是合同诉讼、侵权行为还是其他原因导致的。
+ */
+
+
+
+
+
+
+
+
 #define BLINKER_WIFI
 #include <Blinker.h>
 #include <Adafruit_NeoPixel.h>
 
-const char AUTH[] = "f9272753ed8b";
-const char SSID[] = "HUAWEI_B535_1518";
-const char PASSWORD[] = "lcj102929";
+const char AUTH[] = "your_device_ker_here";                                      //点灯科技app密钥
+const char SSID[] = "your_wifi_name";                                            //WiFi名字
+const char PASSWORD[] = "your_wifi_password";                                    //wifi密码
 const uint8_t RELAY_PIN = 0, LED_PIN = 2, LED_COUNT = 15, MAX_BRIGHTNESS = 150;
 
 Adafruit_NeoPixel strip(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ800);
